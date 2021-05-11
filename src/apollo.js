@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/',
+  uri: '/',
   cache: new InMemoryCache(),
   resolvers: {
     Movie: {
@@ -20,3 +20,5 @@ const client = new ApolloClient({
   }
 });
 export default client;
+
+// http://localhost:4000
